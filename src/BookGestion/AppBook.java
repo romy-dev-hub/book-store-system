@@ -6,7 +6,7 @@ public class AppBook {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("\nenter numbers of books u want: ");
+        System.out.print("enter numbers of books u want: ");
         int bookN = sc.nextInt();sc.nextLine();
 
         Book[] books = new Book[bookN];
@@ -39,11 +39,11 @@ public class AppBook {
 
         //use display() to display infos:
         System.out.print("\nlist of books: ");
-        for (Book book : books){
+        for (Book book : books) {
             book.Display();
             System.out.print("\n");
             System.out.print(book); //calls toString
-            System.out.println("-------------------------");
+            System.out.println("\n-------------------------");
         }
 
         System.out.print("\ntotal books created :" + Book.getBookCounter());
