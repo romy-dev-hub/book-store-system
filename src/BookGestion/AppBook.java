@@ -43,6 +43,7 @@ public class AppBook {
             book.Display();
             System.out.print("\n");
             System.out.print(book); //calls toString
+            System.out.println("-------------------------");
         }
 
         System.out.print("\ntotal books created :" + Book.getBookCounter());
